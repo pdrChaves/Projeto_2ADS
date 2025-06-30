@@ -1,34 +1,38 @@
-/**
- * @author Pedro, Cyrius
-**/
- class itemColecao {
+class itemColecao {
     private String nome;
     private String genero;
-    private String dataLancamento;
-    private String comentario;
-
-    public itemColecao(String nome, String genero, String dataLancamento, String comentario){
+    private String lancamento;
+    private String review;
+    public itemColecao(String nome, String genero, String lancamento, String review){
         this.nome = nome;
         this.genero = genero;
-        this.dataLancamento = dataLancamento;
-        this.comentario = comentario;}
-
+        this.lancamento = lancamento;
+        this.review = review;
     }
     public String getNome(){
         return nome;
     }
-    public void setName(String nome){
+    public void setNome(String nome){
         this.nome = nome;
     }
-    public String geGenero(){
+    public String getGenero(){
         return genero;
     }
     public void setGenero(String genero){
         this.genero = genero;
     }
-    public String dataLancamento(){
-        return dataLancamento;
+    public String getLancamento (){
+        return lancamento;
     }
-    public void setDataLancamento(String dataLancamento){
-        this.dataLancamento = dataLancamento;
+    public void setLancamento(String lancamento){
+        this.lancamento = lancamento;
     }
+    public String getReview(){
+        return review;
+    }
+    public void setReview(String review){
+        this.review = review;
+    }
+    
+
+}
